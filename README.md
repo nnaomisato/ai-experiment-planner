@@ -22,7 +22,7 @@ No fim, gera um documento markdown completo. Você pode salvar como `.md`.
 No Claude Code, rode os 2 comandos:
 
 ```
-/plugin marketplace add <SEU-USUARIO-GITHUB>/ai-experiment-planner
+/plugin marketplace add nnaomisato/ai-experiment-planner
 /plugin install ai-experiment-planner@ai-experiment-planner
 ```
 
