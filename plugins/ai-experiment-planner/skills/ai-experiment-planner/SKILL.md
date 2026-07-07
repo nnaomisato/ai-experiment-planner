@@ -61,9 +61,9 @@ For each suggestion, explain briefly *por que* aquela arquitetura se encaixa no 
 
 ### Priorização: Esforço x Impacto
 
-After suggesting the architecture, help the person prioritize the experiment on two axes, using a simple P/M/G scale. Frame this clearly as a **high-level, provisional estimate**. Its purpose is to compare ways of solving the problem and prioritize experiments, not to commit to a plan. More technical profiles will refine the effort later through critique. Always show the anchors below so the scale converges:
+After suggesting the architecture, help the person prioritize the experiment on two axes, using a simple P/M/G scale. Frame this clearly as a **rough, provisional estimate**. Its purpose is to compare ways of solving the problem and prioritize experiments, not to commit to a plan. More technical profiles will refine the effort later through critique. Always show the anchors below so the scale converges:
 
-> "Antes de seguir, vamos priorizar. Esta é uma estimativa **high level**, só para comparar opções e priorizar. Perfis mais técnicos vão refinar o esforço depois.
+> "Antes de seguir, vamos priorizar. Esta é uma estimativa **preliminar**, só para comparar opções e priorizar. Perfis mais técnicos vão refinar o esforço depois.
 >
 > Classifique o experimento em **esforço** e **impacto**, na escala P (pequeno), M (médio), G (grande):
 >
@@ -199,6 +199,14 @@ Say:
 
 Generate the full structured document below. Fill each section from what was collected across phases. Write with clarity and completeness. This document should stand alone and be useful to someone who wasn't in the conversation.
 
+**Formatação do documento.** Apply good formatting so the document is easy to scan:
+- Leave a blank line between sections and between paragraphs. Never pack everything into one block.
+- Use **negrito** to highlight key terms, decisions, and target values (like the ⭐ metric or the priority spheres).
+- Use bullet points for lists and tables for comparisons. Do not write a list as running text.
+- Keep sentences short. One idea per sentence.
+- Explain any technical term on first use, in plain language (e.g., "RAG (busca em uma base de conhecimento antes de responder)").
+- Use inclusive, gender-neutral language ("pessoa responsável", not "gestor").
+
 ---
 
 ```markdown
@@ -232,7 +240,7 @@ Generate the full structured document below. Fill each section from what was col
 
 **Priorização (Esforço x Impacto):**
 
-*Estimativa high level, a validar com perfis técnicos.*
+*Estimativa preliminar, a validar com perfis técnicos.*
 
 - **Esforço:** {effort_level}. {one-line justification anchored to the P/M/G scale}
 - **Impacto:** {impact_level}. {one-line justification anchored to the P/M/G scale}

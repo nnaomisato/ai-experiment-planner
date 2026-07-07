@@ -1,49 +1,53 @@
 # Como contribuir
 
-Obrigada pelo interesse em melhorar a AI Experiment Planner. Toda contribuição ajuda.
+**Todo feedback ajuda, mesmo sem código.** Conte o que funcionou, o que confundiu e o que faltou.
 
-## Dar feedback
+## Dar feedback (o jeito mais rápido)
 
-A forma mais rápida é abrir uma issue:
+Abra uma issue (um registro público de feedback ou erro):
 
 1. Vá em **Issues > New issue**.
 2. Escolha o template: **Feedback** ou **Problema (bug)**.
 3. Descreva o que aconteceu e o que você esperava.
 
-Feedback vale muito, mesmo sem código. Conte o que funcionou, o que confundiu e o que faltou.
+## Propor uma melhoria
 
-## Propor uma melhoria (Pull Request)
+Você não tem acesso de escrita neste repositório. As mudanças entram por dois passos:
 
-Você não tem acesso de escrita neste repositório. Contribuições entram por fork e Pull Request:
+- **Fork:** uma cópia sua do projeto (botão no topo da página).
+- **Pull Request (PR):** o pedido para incluir sua mudança, que eu reviso antes de aceitar.
 
-1. **Fork** deste repositório (botão no topo da página).
-2. Crie uma branch no seu fork: `git checkout -b minha-melhoria`.
+Passo a passo:
+
+1. Faça o fork.
+2. Crie uma branch (uma linha de trabalho separada): `git checkout -b minha-melhoria`.
 3. Edite o arquivo da skill: `plugins/ai-experiment-planner/skills/ai-experiment-planner/SKILL.md`.
-4. Faça commit e push na sua branch.
-5. Abra um **Pull Request** para a branch `main` deste repositório.
+4. Faça commit e envie (push) para a sua branch.
+5. Abra o Pull Request para a branch `main`.
 
-Toda alteração passa por revisão antes do merge. Ninguém altera a skill sem aprovação.
+Nada muda na skill sem revisão. Ninguém publica direto.
 
 ## O que é bem-vindo
 
-- Correções de clareza e linguagem.
-- Novos exemplos ou perguntas que melhorem cada fase.
-- Ajustes nos frameworks (HEART, esferas éticas) com justificativa.
+- Correções de clareza e de linguagem.
+- Novos exemplos ou perguntas que melhorem cada etapa.
+- Ajustes nos métodos (HEART, pontos de ética) com uma justificativa.
 - Traduções.
 
-## Padrões de escrita
+## Como escrever
 
-- Português do Brasil claro e direto.
+- Português do Brasil, claro e direto.
 - Frases curtas. Uma ideia por frase.
-- Linguagem neutra de gênero para papéis genéricos ("pessoa responsável", não "gestor").
+- Linguagem inclusiva e neutra de gênero ("pessoa responsável", não "gestor").
+- Explique o termo técnico na primeira vez que aparecer.
 - Sem o caractere travessão (em-dash). Use ponto, dois-pontos, parênteses ou vírgula.
 
-## Validar a skill localmente
+## Testar antes de enviar
 
-Antes de abrir o PR, teste no Claude Code:
+No Claude Code, rode:
 
 ```
 claude --plugin-dir ./plugins/ai-experiment-planner
 ```
 
-Dispare a skill e rode as 6 fases para confirmar que tudo funciona.
+Dispare a skill e percorra as etapas para confirmar que tudo funciona.

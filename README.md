@@ -1,34 +1,36 @@
 # AI Experiment Planner
 
-Skill do Claude Code para planejar experimentos de IA éticos e escaláveis, do problema à documentação.
+**Planeje experimentos de IA do problema à documentação, sem virar burocracia.**
 
-Ela conduz você por 6 fases, em português, e entrega um documento pronto para compartilhar.
+Isto é uma skill: uma extensão que ensina o Claude a conduzir uma tarefa específica. Esta skill guia você por 6 etapas, em português, e entrega no fim um documento pronto para compartilhar.
 
-## O que a skill faz
+**Por que importa:** boa ideia de IA sem método vira retrabalho. A skill dá o método e já pensa em ética e em escala desde o começo.
 
-Conversa guiada, uma fase por vez, explicando cada framework antes de perguntar:
+## Instale em 2 comandos
 
-1. **Contexto**: nome e origem do experimento.
-2. **Problema**: o que resolver e como medir sucesso.
-3. **Pipeline atual**: mapeia o processo de hoje, sugere uma arquitetura de IA e prioriza por Esforço x Impacto (escala P/M/G).
-4. **Hipótese**: o que sabemos, o que acreditamos, o que vamos testar.
-5. **Métricas**: framework HEART aplicado a modelo, UX e negócio.
-6. **Ética**: 10 esferas de consideração, com as 2 prioridades e um plano de mitigação.
-
-No fim, gera um documento markdown completo. Você pode salvar como `.md`.
-
-## Instalação
-
-No Claude Code, rode os 2 comandos:
+Rode no Claude Code (o assistente de IA da Anthropic que funciona no seu terminal ou editor de código):
 
 ```
 /plugin marketplace add nnaomisato/ai-experiment-planner
 /plugin install ai-experiment-planner@ai-experiment-planner
 ```
 
-Pronto. Para começar, escreva algo como "quero planejar um experimento de IA".
+O primeiro comando aponta para o marketplace (a "loja" de onde o Claude baixa a skill). O segundo instala. Depois, escreva algo como "quero planejar um experimento de IA".
 
-## Atualizar
+## As 6 etapas
+
+A conversa acontece uma etapa por vez. A skill explica cada método antes de perguntar.
+
+1. **Contexto:** nome e origem do experimento.
+2. **Problema:** o que resolver e como saber que deu certo.
+3. **Processo atual:** o passo a passo de hoje. A skill sugere um desenho de solução e ajuda a priorizar por Esforço x Impacto (escala P, M, G).
+4. **Hipótese:** o que você sabe, o que acredita e o que vai testar.
+5. **Métricas:** o que medir. Usa o HEART, um método do Google para medir experiência (satisfação, uso, adoção, retenção e sucesso na tarefa).
+6. **Ética:** 10 pontos de atenção, com as 2 prioridades e um plano para reduzir riscos.
+
+**No fim:** a skill monta um documento completo. Você pode salvar como arquivo `.md` (texto simples, fácil de colar em qualquer lugar).
+
+## Mantenha atualizada
 
 Quando a skill evoluir, rode:
 
@@ -38,13 +40,13 @@ Quando a skill evoluir, rode:
 
 ## Gostou? Deixe uma estrela
 
-Se a skill foi útil, clique em **Star** no topo desta página. É o sinal que uso para saber quantas pessoas se interessaram.
+Clique em **Star**, no topo da página. É assim que eu sei quantas pessoas se interessaram.
 
 ## Feedback e contribuição
 
-- **Feedback ou dúvida:** abra uma [issue](../../issues/new/choose).
-- **Ideia de melhoria:** proponha por fork e Pull Request. Veja o [CONTRIBUTING](CONTRIBUTING.md).
+- **Tem uma ideia ou achou um erro?** Abra uma [issue](../../issues/new/choose), um registro público de feedback ou problema. Já tem templates prontos.
+- **Quer melhorar a skill?** Envie sua proposta por fork e Pull Request. O passo a passo está no [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Licença
 
-MIT. Use, adapte e compartilhe, mantendo o aviso de crédito. Veja [LICENSE](LICENSE).
+MIT. Use, adapte e compartilhe, mantendo o crédito. Detalhes em [LICENSE](LICENSE).
