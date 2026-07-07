@@ -205,7 +205,7 @@ This helps the person decide where to start, or whether they can tackle both at 
 
 **Pair each risk with its mitigation.** For each risk, write in running text what the risk is and why it matters in this specific context. Then put the mitigation on its own bullet, so it stands out from the paragraph: `- **Mitigação:** the action that mitigates it and why it works`. Isso deixa a mitigação fácil de achar e de acionar.
 
-**Make the Agenda de Maturidade contextual.** For the remaining dimensions, don't just name them generically. Write a one-line note on how each sphere becomes relevant *for this specific experiment and solution* as it scales. This shows the person the full picture without overwhelming them now.
+**Make the Agenda de Maturidade contextual and complete.** List **all** the remaining dimensions (the other 8, every one not chosen as a priority), one bullet each, without grouping or omitting any. For each, write a one-line note on how it becomes relevant *for this specific experiment and solution* as it scales. Together with the 2 priority dimensions, this makes all 10 appear, without overwhelming the person now.
 
 Collect: `ethics_focus_spheres` (top 2, ranked), `ethics_risks_and_mitigations` (paired), `ethics_agenda` (remaining dimensions, contextual)
 
@@ -316,7 +316,7 @@ Generate the full structured document below. Fill each section from what was col
 ### Agenda de Maturidade
 As demais dimensões devem ser revisitadas conforme o experimento evolui e ganha escala:
 
-{ethics_agenda: for each remaining sphere, a one-line note on how it becomes relevant *specifically for this experiment and solution* at scale}
+{ethics_agenda: list ALL 8 remaining dimensions (todas as que não são prioridade), one bullet each, no grouping. For each, a one-line note on how it becomes relevant *specifically for this experiment and solution* at scale}
 
 ---
 
@@ -352,7 +352,7 @@ If the user wants to save as a file, write the document to a `.md` file in the c
 - Never skip phases in interactive mode, even if the user seems rushed
 - If the user gives a vague answer to any phase, ask one focused follow-up before moving on
 - The final document must include ALL sections (as 6 fases mais a seção 7, Próximos Passos), never omit any
-- The risk management section always highlights **2 priority dimensions**, ranked by esforço / reversibilidade / impacto
+- The risk management section always highlights **2 priority dimensions** (ranked by esforço / reversibilidade / impacto) and lists the **other 8** in the Agenda de Maturidade, so all 10 dimensions appear
 - Date in the final document = today's date in DD/MM/YYYY format
 
 **Language rules (Português do Brasil):**

@@ -95,12 +95,16 @@ Um rascunho genérico ou impreciso gera cobrança desalinhada, exatamente o prob
 - **Mitigação:** manter uma pessoa no controle (quem mentora revisa e edita antes de usar), acompanhar o aproveitamento pela Likert e exigir zero alucinação. Funciona porque o rascunho é ponto de partida, nunca decisão final.
 
 ### Agenda de Maturidade
-As demais dimensões devem ser revisitadas conforme o experimento evolui e ganha escala:
+As demais 8 dimensões devem ser revisitadas conforme o experimento evolui e ganha escala:
 
+- **Identificação:** registrar qual modelo e versão gera os rascunhos e para quê, num inventário simples, conforme mais mentorias usam.
 - **Vieses e equidade:** a avaliação de origem pode ter viés. Ao escalar, medir se o rascunho favorece ou prejudica algum perfil.
 - **Transparência:** deixar claro para quem é mentorado como e por que o PIP foi montado.
+- **Deslocamento de trabalho:** reforçar que a IA apoia quem mentora, não substitui o julgamento humano, e comunicar isso ao time.
 - **Governança:** definir quem aprova o uso e responde por um PIP mal gerado.
-- **Manutenção e Segurança:** versionar o template e o prompt, e proteger o acesso aos dados conforme mais mentorias entram.
+- **Sustentabilidade:** usar o menor modelo que resolve e evitar reprocessar, conforme o volume de PIPs cresce.
+- **Manutenção:** versionar o template e o prompt e revisar quando a qualidade cair.
+- **Segurança:** proteger o acesso aos dados de desempenho e ao modelo, com controle de acesso.
 
 ---
 
