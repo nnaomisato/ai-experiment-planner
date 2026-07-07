@@ -1,6 +1,6 @@
 # Dimensões de risco no uso de IA: guia de consulta
 
-Use este guia ao avaliar os riscos do uso de IA em um experimento (Fase 6 da skill), para um uso mais ético e seguro. A lógica segue o NIST AI RMF (AI Risk Management Framework, o modelo do instituto de padrões dos EUA para gerenciar riscos de IA). Cada dimensão traz o que é, por que importa e perguntas para você fazer.
+Use este guia ao avaliar os riscos do uso de IA em um experimento (Fase 6 da skill), para um uso mais ético e seguro. A lógica segue o NIST AI RMF (AI Risk Management Framework, o modelo do instituto de padrões dos EUA para gerenciar riscos de IA). Cada dimensão traz o que é, por que importa e perguntas para você fazer. Algumas trazem também pontos-chave para verificar, um checklist rápido.
 
 Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads de vendas (indica quais contatos têm mais chance de virar cliente).
 
@@ -24,6 +24,12 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 
 **Perguntas no produto:** usamos dados de clientes para treinar o modelo. Eles sabem? Autorizaram? Conseguimos apagar sob demanda?
 
+**Pontos-chave para verificar:**
+- Dados sensíveis identificados? (PII, ou seja, dados que identificam uma pessoa, além de dados financeiros e de saúde)
+- Há interface direta com o usuário final?
+- Existe plano de resposta a incidentes?
+- Anonimização (remover a identificação) ou pseudonimização (trocar dados por códigos) implementada?
+
 ---
 
 ## 3. Vieses e equidade
@@ -43,6 +49,11 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 **Por que importa:** o time de vendas e os clientes precisam confiar. Se ninguém entende, ninguém usa direito.
 
 **Perguntas no produto:** quando a IA recomenda "não abordar esse lead", quem vende sabe por quê?
+
+**Pontos-chave para verificar:**
+- As pessoas sabem que estão interagindo com uma IA?
+- Existe processo de escalação para humano (encaminhar o caso para uma pessoa decidir)?
+- Decisões críticas são explicáveis, com tracing (registro de como a decisão foi tomada, passo a passo)?
 
 ---
 
@@ -64,6 +75,9 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 
 **Perguntas no produto:** medimos a taxa de acerto das recomendações? Sabemos quando o modelo piora?
 
+**Pontos-chave para verificar:**
+- Taxa de erro e de acerto aceitáveis já estão definidas?
+
 ---
 
 ## 7. Governança
@@ -73,6 +87,9 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 **Por que importa:** sem dono claro, problemas ficam sem solução até virarem crise.
 
 **Perguntas no produto:** quem aprova uma nova versão do modelo? Quem é acionado se algo der errado?
+
+**Pontos-chave para verificar:**
+- Há um responsável legal pela IA definido?
 
 ---
 
@@ -94,6 +111,9 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 
 **Perguntas no produto:** com que frequência revisamos o modelo? Existe um plano de atualização?
 
+**Pontos-chave para verificar:**
+- Versionamento (guardar e identificar cada versão do modelo) e rollback (voltar para uma versão anterior) são possíveis?
+
 ---
 
 ## 10. Segurança
@@ -103,3 +123,8 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 **Por que importa:** pessoas mal-intencionadas podem envenenar os dados de treino (inserir dados falsos para distorcer o modelo), manipular as respostas ou roubar propriedade intelectual.
 
 **Perguntas no produto:** nossos dados de treino estão protegidos? Há controle de acesso aos modelos?
+
+**Pontos-chave para verificar (específicos de LLM, os modelos de linguagem):**
+- Proteção contra prompt injection implementada? (prompt injection é quando alguém esconde instruções maliciosas no texto enviado à IA para desviar o comportamento dela)
+- Proteção contra vazamento de informações sensíveis implementada?
+- Limites de autonomia e autoridade da IA estão definidos?
