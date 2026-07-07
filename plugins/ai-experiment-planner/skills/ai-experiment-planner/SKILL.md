@@ -61,9 +61,9 @@ For each suggestion, explain briefly *por que* aquela arquitetura se encaixa no 
 
 ### Priorização: Esforço x Impacto
 
-After suggesting the architecture, help the person prioritize the experiment on two axes, using a simple P/M/G scale. Frame this clearly as a **rough, provisional estimate**. Its purpose is to compare ways of solving the problem and prioritize experiments, not to commit to a plan. More technical profiles will refine the effort later through critique. Always show the anchors below so the scale converges:
+After suggesting the architecture, help the person prioritize the experiment on two axes, using a simple P/M/G scale. Frame this clearly as a **rough, provisional estimate**. Its purpose is to compare ways of solving the problem and prioritize experiments, not to commit to a plan. People with more experience and knowledge should later refine or confirm the estimate, or it can serve as a reference. Recommend tracking the estimate against the real effort at short intervals, and warning stakeholders and the team of upcoming tasks early about possible delays and the need to replan if the gap between estimated and real grows. Always show the anchors below so the scale converges:
 
-> "Antes de seguir, vamos priorizar. Esta é uma estimativa **preliminar**, só para comparar opções e priorizar. Perfis mais técnicos vão refinar o esforço depois.
+> "Antes de seguir, vamos priorizar. Esta é uma estimativa **preliminar**, só para comparar opções e priorizar. Depois, valide com pessoas de maior experiência para refinar a estimativa ou usá-la como referência.
 >
 > Classifique o experimento em **esforço** e **impacto**, na escala P (pequeno), M (médio), G (grande):
 >
@@ -240,12 +240,13 @@ Generate the full structured document below. Fill each section from what was col
 
 **Priorização (Esforço x Impacto):**
 
-*Estimativa preliminar, a validar com perfis técnicos.*
+*Estimativa preliminar. Valide com pessoas de maior experiência e conhecimento para refinar ou usar como referência.*
 
 - **Esforço:** {effort_level}. {one-line justification anchored to the P/M/G scale}
 - **Impacto:** {impact_level}. {one-line justification anchored to the P/M/G scale}
 - **Leitura:** {priority_reading: quick win, aposta estratégica, evitar/adiar ou incremental, com o trade-off em uma linha}
 - **Opções para reduzir esforço:** {effort_reduction_ideas: como o experimento poderia ficar mais enxuto, ou "nenhuma identificada"}
+- **Acompanhamento:** compare o estimado com o real em intervalos curtos. Antecipe a stakeholders (pessoas interessadas ou impactadas) e ao time das próximas tarefas os possíveis atrasos e a necessidade de reajustar o planejamento, caso o estimado e o real comecem a se distanciar.
 
 ---
 
