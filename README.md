@@ -22,8 +22,8 @@ O primeiro comando aponta para o marketplace (a "loja" de onde o Claude baixa a 
 A conversa acontece uma etapa por vez. A skill explica cada método antes de perguntar.
 
 1. **Contexto:** nome e origem do experimento.
-2. **Problema:** o que resolver e como saber que deu certo.
-3. **Processo atual:** o passo a passo de hoje. A skill sugere um desenho de solução e ajuda a priorizar por Esforço x Impacto (escala P, M, G).
+2. **Problema (PCI):** problema, comportamento desejado e impacto esperado.
+3. **Processo atual:** o passo a passo de hoje. A skill aponta oportunidades de automação inteligente (etapas repetitivas, manuais e de esforço intelectual), sugere um desenho de solução e prioriza por Esforço x Impacto (escala P, M, G).
 4. **Hipótese:** o que você sabe, o que acredita e o que vai testar.
 5. **Métricas:** o que medir. Usa o HEART, um método do Google para medir experiência (satisfação, uso, adoção, retenção e sucesso na tarefa).
 6. **Gestão de riscos de IA:** 10 dimensões de risco, com as 2 prioridades e um plano de mitigação, em analogia ao NIST AI RMF (o modelo de gestão de riscos de IA do instituto de padrões dos EUA). Vem com um [guia de consulta](plugins/ai-experiment-planner/skills/ai-experiment-planner/references/dimensoes-risco-ia.md) detalhado de cada dimensão.

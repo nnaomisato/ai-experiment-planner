@@ -32,10 +32,10 @@ Collect: `name`, `context`
 
 ## Phase 2: Problema
 
-> "Agora vamos entender o problema que motivou esse experimento:
-> 1. Qual é o **problema observado** hoje? (o que está acontecendo que não deveria, ou o que não está acontecendo e deveria?)
-> 2. Qual é o **comportamento desejado** após o experimento?
-> 3. Quais seriam as **evidências de sucesso**? Como saberemos que o problema foi resolvido?"
+> "Agora vamos definir o **PCI**: Problema, Comportamento desejado e Impacto esperado.
+> 1. **Problema observado** hoje: o que está acontecendo que não deveria, ou o que não está acontecendo e deveria?
+> 2. **Comportamento desejado** após o experimento?
+> 3. **Impacto esperado** (evidências de sucesso): como saberemos que o problema foi resolvido e que gerou valor?"
 
 Collect: `problem`, `desired_behavior`, `success_evidence`
 
@@ -48,7 +48,7 @@ Introduce:
 
 Ask:
 > "1. Descreva o **processo atual passo a passo**, como as coisas funcionam hoje, sem IA.
-> 2. Olhando para esse processo, **quais etapas você imagina automatizar ou aprimorar com IA**?"
+> 2. Olhando para esse processo, **quais etapas são candidatas a automação inteligente**? Priorize as etapas **RMI**: repetitivas, manuais e que exigem esforço intelectual."
 
 After collecting the answers, **proactively suggest an architecture** for the automation targets described. Choose from patterns like:
 - **Agente conversacional** (LLM + ferramenta de busca + memória)
@@ -188,7 +188,7 @@ After receiving the answer:
 
 This helps the person decide where to start, or whether they can tackle both at once for better short-term results.
 
-**Pair each risk with its mitigation.** Don't list risks and mitigations separately. For each risk, write: what the risk is → why it matters in this specific context → what action mitigates it → why that action works. This causal chain builds critical thinking and makes the document actionable.
+**Pair each risk with its mitigation.** Don't list risks and mitigations separately. For each risk, write: what the risk is → why it matters in this specific context → what action mitigates it → why that action works. This causal chain builds critical thinking and makes the document actionable. Destaque a ação de mitigação em negrito, para saltar aos olhos.
 
 **Make the Agenda de Maturidade contextual.** For the remaining dimensions, don't just name them generically. Write a one-line note on how each sphere becomes relevant *for this specific experiment and solution* as it scales. This shows the person the full picture without overwhelming them now.
 
@@ -203,9 +203,11 @@ Say:
 
 Generate the full structured document below. Fill each section from what was collected across phases. Write with clarity and completeness. This document should stand alone and be useful to someone who wasn't in the conversation.
 
+**O plano final deve ser enxuto e objetivo**, memorável e fácil de acompanhar, e ao mesmo tempo claro o suficiente para receber um critique e ser refinado. Corte o que não ajuda a decidir nem a executar.
+
 **Formatação do documento.** Apply good formatting so the document is easy to scan:
 - Leave a blank line between sections and between paragraphs. Never pack everything into one block.
-- Use **negrito** to highlight key terms, decisions, and target values (like the ⭐ metric or the priority spheres).
+- Use **negrito** to highlight key terms, decisions, target values (like the ⭐ metric), the priority dimensions, and especially the mitigation strategies (as estratégias de mitigação).
 - Use bullet points for lists and tables for comparisons. Do not write a list as running text.
 - Keep sentences short. One idea per sentence.
 - Explain any technical term on first use, in plain language (e.g., "RAG (busca em uma base de conhecimento antes de responder)").
@@ -227,16 +229,16 @@ Generate the full structured document below. Fill each section from what was col
 
 **Comportamento desejado:** {desired_behavior}
 
-**Evidências de sucesso:** {success_evidence}
+**Impacto esperado (evidências de sucesso):** {success_evidence}
 
 ---
 
-## 3. Pipeline Atual + Oportunidades de Automação
+## 3. Pipeline Atual + Oportunidades de Automação Inteligente
 
 **Processo atual:**
 {current_pipeline: describe as numbered steps if the user provided them that way}
 
-**Etapas a automatizar/aprimorar com IA:**
+**Oportunidades de automação inteligente (etapas RMI: repetitivas, manuais e que exigem esforço intelectual):**
 {automation_targets: use numbered or bulleted list}
 
 **Arquitetura sugerida:**
@@ -285,12 +287,12 @@ Generate the full structured document below. Fill each section from what was col
 **1ª prioridade: {ethics_sphere_1}**
 *(Prioridade porque: {reasoning using esforço / reversibilidade / impacto})*
 
-{risk_1: what the risk is → why it matters in this specific context → mitigation → why the mitigation works}
+{risk_1: what the risk is → why it matters in this specific context → **mitigation in bold** → why the mitigation works}
 
 **2ª prioridade: {ethics_sphere_2}**
 *(Prioridade porque: {reasoning using esforço / reversibilidade / impacto})*
 
-{risk_2: what the risk is → why it matters in this specific context → mitigation → why the mitigation works}
+{risk_2: what the risk is → why it matters in this specific context → **mitigation in bold** → why the mitigation works}
 
 ### Agenda de Maturidade
 As demais dimensões devem ser revisitadas conforme o experimento evolui e ganha escala:
