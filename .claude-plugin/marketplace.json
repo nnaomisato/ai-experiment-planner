@@ -1,0 +1,16 @@
+{
+  "name": "ai-experiment-planner",
+  "owner": {
+    "name": "Naomi Sato"
+  },
+  "metadata": {
+    "description": "Marketplace da skill AI Experiment Planner: planeje experimentos de IA éticos e escaláveis, do problema à documentação.",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "ai-experiment-planner",
+      "source": "./plugins/ai-experiment-planner"
+    }
+  ]
+}

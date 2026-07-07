@@ -1,0 +1,40 @@
+name: Problema (bug)
+description: Relate um comportamento inesperado da skill
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Descreva o problema com o máximo de detalhe possível. Isso acelera a correção.
+  - type: textarea
+    id: o-que-aconteceu
+    attributes:
+      label: O que aconteceu?
+      placeholder: Ex.: a skill pulou a fase de métricas e foi direto para a ética.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que você esperava?
+      placeholder: Ex.: que a skill perguntasse as métricas antes de encerrar.
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir?
+      placeholder: |
+        1. Rodei o comando...
+        2. Respondi...
+        3. Aconteceu...
+    validations:
+      required: false
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do plugin
+      placeholder: Ex.: 1.0.0
+    validations:
+      required: false

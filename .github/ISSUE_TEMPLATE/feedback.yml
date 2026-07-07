@@ -1,0 +1,41 @@
+name: Feedback
+description: Compartilhe o que funcionou, o que confundiu ou o que faltou na skill
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigada pelo feedback. Ele guia a evolução da skill.
+  - type: dropdown
+    id: contexto
+    attributes:
+      label: Onde você usou a skill?
+      options:
+        - Processo interno da minha organização
+        - Projeto com cliente
+        - Estudo ou aula
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: funcionou
+    attributes:
+      label: O que funcionou bem?
+      placeholder: Ex.: a fase de ética me fez pensar em riscos que eu não tinha visto.
+    validations:
+      required: false
+  - type: textarea
+    id: confundiu
+    attributes:
+      label: O que confundiu ou faltou?
+      placeholder: Ex.: não entendi a diferença entre métrica de modelo e de negócio.
+    validations:
+      required: true
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: Alguma sugestão de melhoria?
+      placeholder: Ex.: incluir um exemplo preenchido em cada fase.
+    validations:
+      required: false
