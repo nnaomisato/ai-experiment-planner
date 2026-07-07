@@ -30,6 +30,13 @@ A conversa acontece uma etapa por vez. A skill explica cada método antes de per
 
 **No fim:** a skill monta um documento completo, com uma seção de próximos passos (quebrar em tarefas por marcos e distribuir entre responsáveis). Você pode salvar como arquivo `.md` (texto simples, fácil de colar em qualquer lugar).
 
+## Exemplo pronto
+
+Veja como fica o documento final, com dados fictícios:
+
+- [Exemplo em PDF](examples/exemplo-pip-colaboradores.pdf) (consulta rápida)
+- [Exemplo em markdown](examples/exemplo-pip-colaboradores.md)
+
 ## Mantenha atualizada
 
 Quando a skill evoluir, rode:

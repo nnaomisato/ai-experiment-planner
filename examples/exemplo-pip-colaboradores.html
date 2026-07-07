@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exemplo AI Experiment Planner: PIP para colaboradores</title>
+<style>
+  :root { color-scheme: light; }
+  @page { margin: 18mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px;
+    font-size: 15px;
+  }
+  h1 { font-size: 1.7rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 2px solid #d7d0e8; page-break-after: avoid; }
+  h3 { font-size: 1.02rem; margin: 18px 0 6px; color: #3a2d5c; page-break-after: avoid; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  strong { color: #241a3d; }
+  em { color: #444; }
+  hr { border: none; border-top: 1px solid #e2e2e2; margin: 22px 0; }
+  blockquote {
+    margin: 0 0 18px;
+    padding: 10px 14px;
+    background: #f3f0fa;
+    border-left: 4px solid #6b4fbb;
+    border-radius: 4px;
+    font-size: 0.92rem;
+    color: #33285a;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 0.95rem; }
+  caption { text-align: left; font-weight: 600; margin-bottom: 6px; color: #241a3d; }
+  th, td { border: 1px solid #cfc7e0; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th[scope="row"] { background: #f3f0fa; width: 32%; }
+  thead th { background: #ece7f7; }
+  .footer { margin-top: 26px; font-size: 0.85rem; color: #666; font-style: italic; }
+  .footer p { margin: 2px 0; }
+</style>
+</head>
+<body>
+<main>
+<blockquote>
+  <strong>Exemplo ilustrativo.</strong> Documento gerado com a skill AI Experiment Planner, para mostrar como fica o output final. Dados fictícios.
+</blockquote>
+
+<article>
+<h1>Experimento de IA: Criação de Performance Improvement Plan (PIP) para colaboradores</h1>
+
+<h2>1. Contexto</h2>
+<p>Processo interno de RH. Apoia as mentorias de desempenho, da criação ao acompanhamento do PIP (plano de melhoria de performance).</p>
+
+<hr>
+
+<h2>2. Problema</h2>
+<p><strong>Problema observado:</strong> o acompanhamento não é estruturado. Falta clareza sobre o foco urgente, prazo e critério de avaliação da evolução. Fica subjetivo e, muitas vezes, sem alinhamento entre quem mentora e quem é mentorado.</p>
+<p><strong>Comportamento desejado:</strong> toda mentoria com um PIP documentado e acompanhado. Sem cobranças desalinhadas e sem demora em decisões de reconhecimento ou evolução.</p>
+<p><strong>Impacto esperado (evidências de sucesso):</strong> melhores decisões baseadas em dados e menos surpresas no meio do processo.</p>
+
+<hr>
+
+<h2>3. Pipeline Atual + Oportunidades de Automação Inteligente</h2>
+<p><strong>Processo atual:</strong></p>
+<ol>
+  <li>Avaliações são realizadas.</li>
+  <li>Identificam-se os pontos de maior gargalo.</li>
+  <li>Conversa com a pessoa sobre situações, comportamento e impacto gerado.</li>
+  <li>Definem-se competências-chave a trabalhar.</li>
+  <li>Marcam-se encontros periódicos.</li>
+</ol>
+<p><strong>Oportunidades de automação inteligente (etapas RMI: repetitivas, manuais e de esforço intelectual):</strong></p>
+<ul>
+  <li>Gerar o <strong>rascunho inicial do PIP</strong> a partir dos gargalos da avaliação, para revisar na conversa do passo 3.</li>
+  <li>(2ª fase) Completar o plano após as competências-chave, com brainstorm de como trabalhá-las, priorização e frequência de acompanhamento das evidências.</li>
+</ul>
+<p><strong>Arquitetura sugerida:</strong> alvo: <strong>RAG</strong> (busca em uma base antes de responder) + <strong>template estruturado</strong> + passo <strong>conversacional</strong> de refino. No piloto, versão enxuta: sem integração, usando PIPs anteriores como exemplos no prompt e o template preenchido a partir de um resumo colado.</p>
+<p><strong>Priorização (Esforço x Impacto):</strong></p>
+<p><em>Estimativa preliminar. Valide com pessoas de maior experiência e conhecimento para refinar ou usar como referência.</em></p>
+<ul>
+  <li><strong>Esforço:</strong> P (após reduções). Cola-se o resumo da avaliação e o modelo preenche o template, sem integração.</li>
+  <li><strong>Impacto:</strong> G. Afeta todas as mentorias e melhora decisões de reconhecimento e cobrança.</li>
+  <li><strong>Leitura:</strong> quick win (Impacto G + Esforço P). Comece por aqui.</li>
+  <li><strong>Opções para reduzir esforço (adotadas):</strong> resumo da avaliação preenche o template; automatizar só o rascunho inicial; rodar com 3 mentorias reais.</li>
+  <li><strong>Acompanhamento:</strong> compare o estimado com o real em intervalos curtos. Antecipe a stakeholders (pessoas interessadas ou impactadas) e ao time possíveis atrasos e reajustes de planejamento.</li>
+</ul>
+
+<hr>
+
+<h2>4. Framework de Hipótese</h2>
+<table>
+  <caption>Hipótese estruturada do experimento</caption>
+  <tbody>
+    <tr><th scope="row">O que sabemos</th><td>Hoje não existe histórico de PIPs.</td></tr>
+    <tr><th scope="row">Hipóteses</th><td>Com PIPs, teremos mais confiança para decidir mais rápido sobre reconhecimento ou cobrança, de forma assertiva.</td></tr>
+    <tr><th scope="row">Aposta de solução</th><td>Automatizar o processo com IA para agilizar a documentação e facilitar o acompanhamento, consultável no futuro.</td></tr>
+    <tr><th scope="row">Critério de sucesso</th><td>Nos prazos definidos, ter mais confiança e evidências para decidir com base em dados, com aprendizado mútuo e motivos claros.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>5. Métricas (HEART aplicado)</h2>
+<h3>Métricas de Modelo</h3>
+<ul>
+  <li><strong>Aderência</strong> do rascunho às competências e gargalos reais (1 a 5): alvo ≥ 4.</li>
+  <li>⭐ <strong>Aproveitamento do rascunho:</strong> avaliação Likert de quem mentora, com comentário qualitativo, sobre o quanto o rascunho serviu. Alvo ≥ 4. É o sinal de que a IA ajuda de verdade, sem virar retrabalho.</li>
+  <li><strong>Sem alucinação:</strong> zero fatos ou competências inventados que não estão na avaliação.</li>
+</ul>
+<h3>Métricas de UX</h3>
+<ul>
+  <li>⭐ <strong>Clareza percebida</strong> por quem é mentorado (entende foco, prazo e avaliação, 1 a 5): alvo ≥ 4. É o centro do problema: acabar com a subjetividade.</li>
+  <li><strong>Alinhamento:</strong> PIPs com o campo de acordo mútuo preenchido e confirmado pelas duas partes: alvo ≥ 90%.</li>
+  <li><strong>Esforço de montar o PIP:</strong> de horas para menos de 15 min.</li>
+</ul>
+<h3>Métricas de Negócio</h3>
+<ul>
+  <li>⭐ <strong>Cobertura:</strong> mentorias com PIP documentado e acompanhado: alvo 100% (hoje 0). Adoção real prova o valor.</li>
+  <li><strong>Tempo de decisão</strong> para reconhecimento ou cobrança após o prazo: estabelecer a linha de base e reduzir.</li>
+  <li><strong>Surpresas no processo</strong> (cobranças desalinhadas): tender a zero.</li>
+</ul>
+
+<hr>
+
+<h2>6. Gestão de Riscos no Uso de IA</h2>
+<h3>Dimensões prioritárias</h3>
+<p><strong>1ª prioridade: Dados e privacidade</strong><br>
+<em>(Prioridade porque: impacto alto e reversibilidade baixa. Um vazamento de dado de desempenho não se desfaz. O esforço de mitigar é moderado.)</em></p>
+<p>Dados de desempenho de pessoas entram no modelo e ficam num documento de piloto. Importa porque são dados sensíveis, sob a LGPD (Lei Geral de Proteção de Dados), e um acesso amplo expõe a pessoa avaliada.</p>
+<ul>
+  <li><strong>Mitigação:</strong> usar só o necessário no resumo, restringir o acesso ao documento às pessoas envolvidas, definir prazo de descarte e não usar os dados para treinar o modelo. Funciona porque limita a exposição ao mínimo.</li>
+</ul>
+<p><strong>2ª prioridade: Qualidade</strong><br>
+<em>(Prioridade porque: impacto alto no objetivo, mas reversível. Dá para revisar o rascunho antes de usar. Esforço de mitigar baixo.)</em></p>
+<p>Um rascunho genérico ou impreciso gera cobrança desalinhada, exatamente o problema que o experimento quer resolver. Importa porque um PIP errado prejudica a pessoa e a confiança no processo.</p>
+<ul>
+  <li><strong>Mitigação:</strong> manter uma pessoa no controle (quem mentora revisa e edita antes de usar), acompanhar o aproveitamento pela Likert e exigir zero alucinação. Funciona porque o rascunho é ponto de partida, nunca decisão final.</li>
+</ul>
+<h3>Agenda de Maturidade</h3>
+<p>As demais dimensões devem ser revisitadas conforme o experimento evolui e ganha escala:</p>
+<ul>
+  <li><strong>Vieses e equidade:</strong> a avaliação de origem pode ter viés. Ao escalar, medir se o rascunho favorece ou prejudica algum perfil.</li>
+  <li><strong>Transparência:</strong> deixar claro para quem é mentorado como e por que o PIP foi montado.</li>
+  <li><strong>Governança:</strong> definir quem aprova o uso e responde por um PIP mal gerado.</li>
+  <li><strong>Manutenção e Segurança:</strong> versionar o template e o prompt, e proteger o acesso aos dados conforme mais mentorias entram.</li>
+</ul>
+
+<hr>
+
+<h2>7. Próximos Passos</h2>
+<p>Depois de validar este plano, transforme-o em execução:</p>
+<ul>
+  <li><strong>Quebre em tarefas</strong> agrupadas por marcos ou entregas de valor.</li>
+  <li><strong>Defina quem assume cada entrega.</strong> Uma pessoa responsável por grupo.</li>
+  <li><strong>Considere um SDD</strong> (Spec-Driven Development, desenvolvimento guiado por especificação): parte de uma especificação clara, gera as tarefas e mantém plano e execução alinhados. Exemplo aberto: GitHub Spec Kit.</li>
+</ul>
+<p><strong>Marcos sugeridos para este experimento:</strong></p>
+<ol>
+  <li>Template do PIP definido, com campos de foco, prazo, competências e evidências.</li>
+  <li>Rascunho gerado a partir do resumo da avaliação, testado em 3 mentorias reais.</li>
+  <li>Coleta leve de aproveitamento (Likert) e ajuste do prompt para a próxima leva.</li>
+</ol>
+
+<div class="footer">
+  <p>Documento gerado em: 07/07/2026</p>
+  <p>Ferramenta: AI Experiment Planner</p>
+</div>
+</article>
+</main>
+</body>
+</html>
