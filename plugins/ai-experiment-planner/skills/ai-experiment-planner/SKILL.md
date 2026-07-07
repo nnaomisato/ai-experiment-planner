@@ -16,6 +16,19 @@ Guide teams through planning and documenting AI experiments. Conduct the convers
 
 **Batch:** The user provides answers for all phases in one message (e.g., they fill everything in upfront or paste a pre-filled form). Recognize this and skip straight to document generation without re-asking each phase.
 
+## Interatividade (AskUserQuestion)
+
+When the AskUserQuestion tool is available (Claude Code), use it for the multiple-choice moments, to make answering faster:
+- the **mode** (right below),
+- the **Esforço** and **Impacto** levels (Phase 3),
+- confirming the **2 priority risk dimensions** (Phase 6).
+
+Keep **free text** for open questions (describe the process, the hypothesis, the metrics). If the tool is not available in the current environment, ask everything in text.
+
+Note: AskUserQuestion allows at most **4 options per question**. That is why the full list of 10 risk dimensions stays as text; buttons are used only where the options are 4 or fewer.
+
+At the start, if the message is not clearly batch, use AskUserQuestion to confirm the mode: **Interativo** (uma fase por vez) or **Batch** (já tenho as respostas).
+
 ---
 
 ## Phase 1: Contextualização
@@ -78,6 +91,8 @@ After suggesting the architecture, help the person prioritize the experiment on 
 > - **G**: melhora estratégica. Muitos usuários/clientes, ou move um indicador de negócio importante.
 >
 > Qual o **esforço** (P/M/G) e qual o **impacto** (P/M/G) deste experimento?"
+
+If AskUserQuestion is available, ask this as two multiple-choice questions, **Esforço** and **Impacto**, each with the options **P**, **M** and **G**, using the anchors above as the option descriptions. Otherwise ask in free text.
 
 After receiving the answer, **read the matrix back** and give a recommendation, explaining the trade-off in one line so the person understands it, not just the label:
 - **Impacto G ou M + Esforço P**: quick win. Comece por aqui.
@@ -181,7 +196,7 @@ Se a pessoa quiser aprofundar em qualquer dimensão, o guia detalhado com exempl
 
 After receiving the answer:
 
-**Prioritize the top 2 dimensions.** Even if the user picked one or several, suggest (or confirm) the 2 most critical ones for this specific experiment. Rank them explicitly (1ª prioridade, 2ª prioridade) and explain the reasoning using 3 criteria:
+**Prioritize the top 2 dimensions.** Even if the user picked one or several, suggest (or confirm) the 2 most critical ones for this specific experiment. If the person named 4 or fewer candidate dimensions, you may use AskUserQuestion (multiSelect) to confirm which 2 are the priority, offering those candidates as options. With more than 4 candidates, confirm in text. Rank them explicitly (1ª prioridade, 2ª prioridade) and explain the reasoning using 3 criteria:
 - **Esforço**: quão difícil é mitigar?
 - **Reversibilidade**: se o problema acontecer, dá para corrigir facilmente?
 - **Impacto**: qual o dano para pessoas/negócio se não for endereçado?
