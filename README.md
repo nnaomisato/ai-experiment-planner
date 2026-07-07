@@ -26,7 +26,7 @@ A conversa acontece uma etapa por vez. A skill explica cada método antes de per
 3. **Processo atual:** o passo a passo de hoje. A skill sugere um desenho de solução e ajuda a priorizar por Esforço x Impacto (escala P, M, G).
 4. **Hipótese:** o que você sabe, o que acredita e o que vai testar.
 5. **Métricas:** o que medir. Usa o HEART, um método do Google para medir experiência (satisfação, uso, adoção, retenção e sucesso na tarefa).
-6. **Ética:** 10 pontos de atenção, com as 2 prioridades e um plano para reduzir riscos.
+6. **Ética:** 10 dimensões de atenção, com as 2 prioridades e um plano para reduzir riscos. Vem com um [guia de consulta](plugins/ai-experiment-planner/skills/ai-experiment-planner/references/dimensoes-eticas.md) detalhado de cada dimensão.
 
 **No fim:** a skill monta um documento completo, com uma seção de próximos passos (quebrar em tarefas por marcos e distribuir entre responsáveis). Você pode salvar como arquivo `.md` (texto simples, fácil de colar em qualquer lugar).
 

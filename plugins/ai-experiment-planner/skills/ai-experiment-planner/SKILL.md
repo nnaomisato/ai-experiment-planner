@@ -157,27 +157,29 @@ Collect: `metrics_model`, `metrics_ux`, `metrics_business`
 ## Phase 6: Ética
 
 Introduce:
-> "Para encerrar, vamos fazer uma avaliação ética. Vamos usar **10 esferas de consideração ética em IA**:
+> "Para encerrar, vamos fazer uma avaliação ética. Vamos usar **10 dimensões de consideração ética em IA**:
 >
-> 1. **Privacidade e dados**: coleta, uso e proteção de dados pessoais
-> 2. **Viés e equidade**: resultados discriminatórios ou injustos
-> 3. **Transparência e explicabilidade**: usuários entendem o que a IA faz?
-> 4. **Autonomia humana**: a IA substitui ou apoia decisões humanas?
-> 5. **Segurança e confiabilidade**: riscos de falha ou uso malicioso
-> 6. **Impacto no trabalho**: efeito sobre empregos e funções
-> 7. **Sustentabilidade**: custo computacional e impacto ambiental
-> 8. **Consentimento**: usuários sabem e concordam com o uso de IA?
-> 9. **Responsabilidade**: quem responde por erros da IA?
-> 10. **Inclusão e acessibilidade**: a solução funciona para todos?"
+> 1. **Identificação**: saber quais IAs usamos, onde, como e para quê
+> 2. **Dados e privacidade**: tratar dados pessoais com consentimento, finalidade e segurança
+> 3. **Vieses e equidade**: não discriminar grupos nem reproduzir preconceitos
+> 4. **Transparência**: explicar como a IA decide, de forma compreensível
+> 5. **Deslocamento de trabalho**: entender e reduzir impactos na força de trabalho
+> 6. **Qualidade**: entregar o que promete, de forma consistente
+> 7. **Governança**: definir quem decide, aprova, monitora e responde pela IA
+> 8. **Sustentabilidade**: considerar o impacto ambiental do processamento
+> 9. **Manutenção**: monitorar, atualizar e corrigir o modelo continuamente
+> 10. **Segurança**: proteger contra ataques, manipulações e vazamentos"
 
 Ask:
-> "1. Qual(is) dessas **10 esferas parece(m) mais relevante(s)** para o seu experimento? (pode escolher mais de uma)
-> 2. Por que você escolheu essa(s) esfera(s)? Quais riscos ou cuidados específicos você vê?
+> "1. Qual(is) dessas **10 dimensões parece(m) mais relevante(s)** para o seu experimento? (pode escolher mais de uma)
+> 2. Por que você escolheu essa(s) dimensão(ões)? Quais riscos ou cuidados específicos você vê?
 > 3. Já há alguma medida planejada para endereçar essa preocupação?"
+
+Se a pessoa quiser aprofundar em qualquer dimensão, o guia detalhado com exemplos está em `references/dimensoes-eticas.md`. Consulte ou compartilhe conforme a necessidade.
 
 After receiving the answer:
 
-**Prioritize the top 2 spheres.** Even if the user picked one or several, suggest (or confirm) the 2 most critical ones for this specific experiment. Rank them explicitly (1ª prioridade, 2ª prioridade) and explain the reasoning using 3 criteria:
+**Prioritize the top 2 dimensions.** Even if the user picked one or several, suggest (or confirm) the 2 most critical ones for this specific experiment. Rank them explicitly (1ª prioridade, 2ª prioridade) and explain the reasoning using 3 criteria:
 - **Esforço**: quão difícil é mitigar?
 - **Reversibilidade**: se o problema acontecer, dá para corrigir facilmente?
 - **Impacto**: qual o dano para pessoas/negócio se não for endereçado?
@@ -186,9 +188,9 @@ This helps the person decide where to start, or whether they can tackle both at 
 
 **Pair each risk with its mitigation.** Don't list risks and mitigations separately. For each risk, write: what the risk is → why it matters in this specific context → what action mitigates it → why that action works. This causal chain builds critical thinking and makes the document actionable.
 
-**Make the Agenda de Maturidade contextual.** For the remaining spheres, don't just name them generically. Write a one-line note on how each sphere becomes relevant *for this specific experiment and solution* as it scales. This shows the person the full picture without overwhelming them now.
+**Make the Agenda de Maturidade contextual.** For the remaining dimensions, don't just name them generically. Write a one-line note on how each sphere becomes relevant *for this specific experiment and solution* as it scales. This shows the person the full picture without overwhelming them now.
 
-Collect: `ethics_focus_spheres` (top 2, ranked), `ethics_risks_and_mitigations` (paired), `ethics_agenda` (remaining spheres, contextual)
+Collect: `ethics_focus_spheres` (top 2, ranked), `ethics_risks_and_mitigations` (paired), `ethics_agenda` (remaining dimensions, contextual)
 
 ---
 
@@ -276,7 +278,7 @@ Generate the full structured document below. Fill each section from what was col
 
 ## 6. Consideração Ética
 
-### Esferas prioritárias
+### Dimensões prioritárias
 
 **1ª prioridade: {ethics_sphere_1}**
 *(Prioridade porque: {reasoning using esforço / reversibilidade / impacto})*
@@ -289,7 +291,7 @@ Generate the full structured document below. Fill each section from what was col
 {risk_2: what the risk is → why it matters in this specific context → mitigation → why the mitigation works}
 
 ### Agenda de Maturidade
-As demais esferas devem ser revisitadas conforme o experimento evolui e ganha escala:
+As demais dimensões devem ser revisitadas conforme o experimento evolui e ganha escala:
 
 {ethics_agenda: for each remaining sphere, a one-line note on how it becomes relevant *specifically for this experiment and solution* at scale}
 
@@ -327,7 +329,7 @@ If the user wants to save as a file, write the document to a `.md` file in the c
 - Never skip phases in interactive mode, even if the user seems rushed
 - If the user gives a vague answer to any phase, ask one focused follow-up before moving on
 - The final document must include ALL sections (as 6 fases mais a seção 7, Próximos Passos), never omit any
-- The ethics section always highlights **2 priority spheres**, ranked by esforço / reversibilidade / impacto
+- The ethics section always highlights **2 priority dimensions**, ranked by esforço / reversibilidade / impacto
 - Date in the final document = today's date in DD/MM/YYYY format
 
 **Language rules (Português do Brasil):**
