@@ -1,6 +1,6 @@
 {
   "name": "ai-experiment-planner",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "Planeje, estruture e documente experimentos de IA. Conversa guiada em português em 6 fases (contexto, problema, pipeline com priorização Esforço x Impacto, hipótese, métricas HEART e gestão de riscos de IA em analogia ao NIST AI RMF), com um documento final pronto para compartilhar.",
   "author": {
     "name": "Naomi Sato"

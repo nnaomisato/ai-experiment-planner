@@ -188,7 +188,7 @@ After receiving the answer:
 
 This helps the person decide where to start, or whether they can tackle both at once for better short-term results.
 
-**Pair each risk with its mitigation.** Don't list risks and mitigations separately. For each risk, write: what the risk is → why it matters in this specific context → what action mitigates it → why that action works. This causal chain builds critical thinking and makes the document actionable. Destaque a ação de mitigação em negrito, para saltar aos olhos.
+**Pair each risk with its mitigation.** For each risk, write in running text what the risk is and why it matters in this specific context. Then put the mitigation on its own bullet, so it stands out from the paragraph: `- **Mitigação:** the action that mitigates it and why it works`. Isso deixa a mitigação fácil de achar e de acionar.
 
 **Make the Agenda de Maturidade contextual.** For the remaining dimensions, don't just name them generically. Write a one-line note on how each sphere becomes relevant *for this specific experiment and solution* as it scales. This shows the person the full picture without overwhelming them now.
 
@@ -287,12 +287,16 @@ Generate the full structured document below. Fill each section from what was col
 **1ª prioridade: {ethics_sphere_1}**
 *(Prioridade porque: {reasoning using esforço / reversibilidade / impacto})*
 
-{risk_1: what the risk is → why it matters in this specific context → **mitigation in bold** → why the mitigation works}
+{risk_1: what the risk is and why it matters in this specific context, em texto corrido}
+
+- **Mitigação:** {how to mitigate risk_1 and why it works}
 
 **2ª prioridade: {ethics_sphere_2}**
 *(Prioridade porque: {reasoning using esforço / reversibilidade / impacto})*
 
-{risk_2: what the risk is → why it matters in this specific context → **mitigation in bold** → why the mitigation works}
+{risk_2: what the risk is and why it matters in this specific context, em texto corrido}
+
+- **Mitigação:** {how to mitigate risk_2 and why it works}
 
 ### Agenda de Maturidade
 As demais dimensões devem ser revisitadas conforme o experimento evolui e ganha escala:
