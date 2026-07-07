@@ -28,7 +28,7 @@ A conversa acontece uma etapa por vez. A skill explica cada método antes de per
 5. **Métricas:** o que medir. Usa o HEART, um método do Google para medir experiência (satisfação, uso, adoção, retenção e sucesso na tarefa).
 6. **Ética:** 10 pontos de atenção, com as 2 prioridades e um plano para reduzir riscos.
 
-**No fim:** a skill monta um documento completo. Você pode salvar como arquivo `.md` (texto simples, fácil de colar em qualquer lugar).
+**No fim:** a skill monta um documento completo, com uma seção de próximos passos (quebrar em tarefas por marcos e distribuir entre responsáveis). Você pode salvar como arquivo `.md` (texto simples, fácil de colar em qualquer lugar).
 
 ## Mantenha atualizada
 

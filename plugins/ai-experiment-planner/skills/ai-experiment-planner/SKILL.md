@@ -294,6 +294,19 @@ As demais esferas devem ser revisitadas conforme o experimento evolui e ganha es
 {ethics_agenda: for each remaining sphere, a one-line note on how it becomes relevant *specifically for this experiment and solution* at scale}
 
 ---
+
+## 7. Próximos Passos
+
+Depois de validar este plano, transforme-o em execução:
+
+- **Quebre em tarefas** agrupadas por milestones (marcos de progresso) ou entregas de valor. Cada grupo deve entregar algo útil por si só.
+- **Defina quem assume cada entrega.** Uma pessoa responsável por grupo de tarefas.
+- **Considere um SDD** (Spec-Driven Development, ou desenvolvimento guiado por especificação). É uma forma de trabalho que parte de uma especificação clara, gera as tarefas a partir dela e mantém plano e execução alinhados. Você já tem quase toda a especificação nas seções acima. Um exemplo aberto para começar é o GitHub Spec Kit.
+
+**Marcos sugeridos para este experimento:**
+{milestones_suggestion: 2 a 4 marcos agrupando os automation_targets em entregas de valor, do mais simples ao mais completo. Se não houver base suficiente, deixe uma orientação genérica de como agrupar}
+
+---
 *Documento gerado em: {date in DD/MM/YYYY format}*
 *Ferramenta: AI Experiment Planner*
 ```
@@ -301,7 +314,7 @@ As demais esferas devem ser revisitadas conforme o experimento evolui e ganha es
 ---
 
 After displaying the document, offer:
-> "Documento pronto! Você pode copiar e salvar. Quer ajustar alguma seção, aprofundar algum ponto, ou salvar como arquivo .md?"
+> "Documento pronto! Você pode copiar e salvar. Quer ajustar alguma seção, aprofundar algum ponto, salvar como arquivo .md, ou já quebrar o plano em tarefas e marcos para começar a execução?"
 
 If the user wants to save as a file, write the document to a `.md` file in the current working directory, using a slug of the experiment name (e.g., `experimento-ia-{slug-name}.md`).
 
@@ -313,7 +326,7 @@ If the user wants to save as a file, write the document to a `.md` file in the c
 - Be educational but concise. Explain frameworks in 3-5 lines, not paragraphs
 - Never skip phases in interactive mode, even if the user seems rushed
 - If the user gives a vague answer to any phase, ask one focused follow-up before moving on
-- The final document must include ALL 6 sections, never omit any
+- The final document must include ALL sections (as 6 fases mais a seção 7, Próximos Passos), never omit any
 - The ethics section always highlights **2 priority spheres**, ranked by esforço / reversibilidade / impacto
 - Date in the final document = today's date in DD/MM/YYYY format
 
