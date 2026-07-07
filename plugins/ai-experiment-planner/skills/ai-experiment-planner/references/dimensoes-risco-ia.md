@@ -1,6 +1,6 @@
 # Dimensões de risco no uso de IA: guia de consulta
 
-Use este guia ao avaliar os riscos do uso de IA em um experimento (Fase 6 da skill), para um uso mais ético e seguro. A lógica segue o NIST AI RMF (AI Risk Management Framework, o modelo do instituto de padrões dos EUA para gerenciar riscos de IA). Cada dimensão traz o que é, por que importa e perguntas para você fazer. Algumas trazem também pontos-chave para verificar, um checklist rápido.
+Use este guia ao avaliar os riscos do uso de IA em um experimento (Fase 6 da skill), para um uso mais ético e seguro. A lógica segue o NIST AI RMF (AI Risk Management Framework, o modelo do instituto de padrões dos EUA para gerenciar riscos de IA). Cada dimensão traz o que é, por que importa, perguntas para você fazer e pontos-chave para verificar (um checklist rápido).
 
 Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads de vendas (indica quais contatos têm mais chance de virar cliente).
 
@@ -13,6 +13,9 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 **Por que importa:** você não gerencia o que não conhece. Reguladores vão perguntar: "quantas IAs vocês têm?".
 
 **Perguntas no produto:** o modelo que sugere leads qualificados, sabemos qual versão está rodando? Conhecemos suas limitações, seus dados de treinamento e suas métricas de desempenho?
+
+**Pontos-chave para verificar:**
+- Documentamos para quê a IA serve e onde ela é usada?
 
 ---
 
@@ -40,6 +43,10 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 
 **Perguntas no produto:** nosso score (a pontuação que ordena os leads) prioriza algum perfil demográfico sem justificativa técnica?
 
+**Pontos-chave para verificar:**
+- Já testamos o sistema para vieses? Qual foi o resultado?
+- Existe um plano para corrigir se um viés aparecer?
+
 ---
 
 ## 4. Transparência
@@ -64,6 +71,10 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 **Por que importa:** pessoas com medo não colaboram. Pessoas sem clareza criam resistência.
 
 **Perguntas no produto:** o time de vendas vê a IA como aliada ou ameaça? Está sendo preparado para trabalhar com ela?
+
+**Pontos-chave para verificar:**
+- Existe um plano para preparar as pessoas para trabalhar com a IA? (capacitação ou requalificação)
+- Revisamos o escopo de trabalho, com clareza do que se espera das pessoas e das habilidades a desenvolver?
 
 ---
 
@@ -100,6 +111,10 @@ Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads
 **Por que importa:** ESG (critérios ambientais, sociais e de governança usados por investidores e clientes) pesa na decisão de compra. Modelos ineficientes custam mais e geram pegada de carbono desnecessária.
 
 **Perguntas no produto:** sabemos o custo de energia dos nossos processos? Há otimização planejada? Evitamos desperdício?
+
+**Pontos-chave para verificar:**
+- O tamanho do modelo condiz com a necessidade? (use o menor modelo que resolve)
+- Evitamos desperdício, exigindo confiança alta antes de gastar muitos tokens? (token é a unidade de texto que a IA processa e que gera custo)
 
 ---
 
