@@ -1,6 +1,6 @@
-# Dimensões éticas de IA: guia de consulta
+# Dimensões de risco no uso de IA: guia de consulta
 
-Use este guia ao avaliar a ética de um experimento de IA (Fase 6 da skill). Cada dimensão traz o que é, por que importa e perguntas para você fazer.
+Use este guia ao avaliar os riscos do uso de IA em um experimento (Fase 6 da skill), para um uso mais ético e seguro. A lógica segue o NIST AI RMF (AI Risk Management Framework, o modelo do instituto de padrões dos EUA para gerenciar riscos de IA). Cada dimensão traz o que é, por que importa e perguntas para você fazer.
 
 Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads de vendas (indica quais contatos têm mais chance de virar cliente).
 

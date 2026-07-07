@@ -1,9 +1,9 @@
 ---
 name: ai-experiment-planner
 description: >
-  Use this skill to plan, structure, and document AI experiments for any team, for internal process automation or client projects. This skill guides a structured conversation in Portuguese across 6 phases (context, problem, current pipeline, hypothesis framework, HEART metrics, and AI ethics), explaining each framework didactically, and compiles a complete markdown document at the end.
+  Use this skill to plan, structure, and document AI experiments for any team, for internal process automation or client projects. This skill guides a structured conversation in Portuguese across 6 phases (context, problem, current pipeline, hypothesis framework, HEART metrics, and AI risk management in analogy to the NIST AI RMF), explaining each framework didactically, and compiles a complete markdown document at the end.
 
-  Trigger this skill whenever the user mentions: planejar experimento de IA, documentar experimento de IA, iniciativa de IA, pipeline de IA, hipótese de IA, métricas de IA, ética de IA, planejamento de IA, automação com IA, framework HEART, validar solução de IA, experimento de automação, testar solução com IA. Also trigger if the user wants to structure or document any AI initiative, even if they don't use these exact words.
+  Trigger this skill whenever the user mentions: planejar experimento de IA, documentar experimento de IA, iniciativa de IA, pipeline de IA, hipótese de IA, métricas de IA, ética de IA, gestão de riscos de IA, gerenciamento de riscos de IA, NIST AI RMF, uso ético e seguro de IA, planejamento de IA, automação com IA, framework HEART, validar solução de IA, experimento de automação, testar solução com IA. Also trigger if the user wants to structure or document any AI initiative, even if they don't use these exact words.
 ---
 
 # AI Experiment Planner
@@ -154,10 +154,12 @@ Collect: `metrics_model`, `metrics_ux`, `metrics_business`
 
 ---
 
-## Phase 6: Ética
+## Phase 6: Gestão de Riscos no Uso de IA
 
 Introduce:
-> "Para encerrar, vamos fazer uma avaliação ética. Vamos usar **10 dimensões de consideração ética em IA**:
+> "Para encerrar, vamos avaliar os riscos do uso de IA neste experimento, para um uso mais ético e seguro. A abordagem segue a lógica do NIST AI RMF (AI Risk Management Framework, o modelo do instituto de padrões dos EUA para gerenciar riscos de IA): mapear os riscos, medir e decidir como tratar.
+>
+> Vamos usar **10 dimensões de risco no uso de IA**:
 >
 > 1. **Identificação**: saber quais IAs usamos, onde, como e para quê
 > 2. **Dados e privacidade**: tratar dados pessoais com consentimento, finalidade e segurança
@@ -171,11 +173,11 @@ Introduce:
 > 10. **Segurança**: proteger contra ataques, manipulações e vazamentos"
 
 Ask:
-> "1. Qual(is) dessas **10 dimensões parece(m) mais relevante(s)** para o seu experimento? (pode escolher mais de uma)
+> "1. Qual(is) dessas **10 dimensões trazem mais risco** para o seu experimento? (pode escolher mais de uma)
 > 2. Por que você escolheu essa(s) dimensão(ões)? Quais riscos ou cuidados específicos você vê?
 > 3. Já há alguma medida planejada para endereçar essa preocupação?"
 
-Se a pessoa quiser aprofundar em qualquer dimensão, o guia detalhado com exemplos está em `references/dimensoes-eticas.md`. Consulte ou compartilhe conforme a necessidade.
+Se a pessoa quiser aprofundar em qualquer dimensão, o guia detalhado com exemplos está em `references/dimensoes-risco-ia.md`. Consulte ou compartilhe conforme a necessidade.
 
 After receiving the answer:
 
@@ -276,7 +278,7 @@ Generate the full structured document below. Fill each section from what was col
 
 ---
 
-## 6. Consideração Ética
+## 6. Gestão de Riscos no Uso de IA
 
 ### Dimensões prioritárias
 
@@ -329,7 +331,7 @@ If the user wants to save as a file, write the document to a `.md` file in the c
 - Never skip phases in interactive mode, even if the user seems rushed
 - If the user gives a vague answer to any phase, ask one focused follow-up before moving on
 - The final document must include ALL sections (as 6 fases mais a seção 7, Próximos Passos), never omit any
-- The ethics section always highlights **2 priority dimensions**, ranked by esforço / reversibilidade / impacto
+- The risk management section always highlights **2 priority dimensions**, ranked by esforço / reversibilidade / impacto
 - Date in the final document = today's date in DD/MM/YYYY format
 
 **Language rules (Português do Brasil):**
