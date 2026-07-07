@@ -61,9 +61,11 @@ For each suggestion, explain briefly *por que* aquela arquitetura se encaixa no 
 
 ### Priorização: Esforço x Impacto
 
-After suggesting the architecture, help the person prioritize the experiment on two axes, using a simple P/M/G scale. Always show the anchors below so the scale converges:
+After suggesting the architecture, help the person prioritize the experiment on two axes, using a simple P/M/G scale. Frame this clearly as a **high-level, provisional estimate**. Its purpose is to compare ways of solving the problem and prioritize experiments, not to commit to a plan. More technical profiles will refine the effort later through critique. Always show the anchors below so the scale converges:
 
-> "Antes de seguir, vamos priorizar. Classifique o experimento em **esforço** e **impacto**, na escala P (pequeno), M (médio), G (grande):
+> "Antes de seguir, vamos priorizar. Esta é uma estimativa **high level**, só para comparar opções e priorizar. Perfis mais técnicos vão refinar o esforço depois.
+>
+> Classifique o experimento em **esforço** e **impacto**, na escala P (pequeno), M (médio), G (grande):
 >
 > **Esforço** (quanto custa construir e testar):
 > - **P**: dá para testar em até 2 semanas. Ferramentas prontas, sem integração complexa, pouca curadoria de dados.
@@ -83,7 +85,17 @@ After receiving the answer, **read the matrix back** and give a recommendation, 
 - **Impacto P + Esforço G**: evite ou adie. Muito custo para pouco retorno.
 - **Impacto P + Esforço P**: melhoria incremental. Faça se sobrar capacidade.
 
-Collect: `current_pipeline`, `automation_targets`, `architecture_suggestion`, `effort_level` (P/M/G), `impact_level` (P/M/G), `priority_reading`
+**Cocriar redução de esforço.** When the effort is M or G, or high relative to the impact, proactively help the person lower it before committing. The goal is to open alternatives and compare with other ways of solving the same problem. Ask, and suggest 2 or 3 concrete reductions tailored to this experiment:
+
+> "Dá para reduzir o esforço sem perder o valor do teste? Algumas formas:
+> - **Reduzir a complexidade**: uma solução mais simples resolve? (ex.: prompt + ferramenta pronta em vez de fine-tuning)
+> - **Diminuir o escopo automatizado**: automatizar só a etapa de maior gargalo, não o processo inteiro.
+> - **Fatiar em um teste fino**: validar a hipótese com uma amostra pequena antes de construir tudo.
+> - **Reaproveitar o que já existe**: bases, integrações ou fluxos prontos."
+
+If a reduction is adopted, re-estimate the effort (P/M/G) with the person so the priorização reflects the leaner version.
+
+Collect: `current_pipeline`, `automation_targets`, `architecture_suggestion`, `effort_level` (P/M/G), `impact_level` (P/M/G), `priority_reading`, `effort_reduction_ideas`
 
 ---
 
@@ -219,9 +231,13 @@ Generate the full structured document below. Fill each section from what was col
 {architecture_suggestion: describe the recommended pattern (RAG, multi-agent, conversational agent, etc.) and explain *por que* essa arquitetura se encaixa neste contexto específico}
 
 **Priorização (Esforço x Impacto):**
+
+*Estimativa high level, a validar com perfis técnicos.*
+
 - **Esforço:** {effort_level}. {one-line justification anchored to the P/M/G scale}
 - **Impacto:** {impact_level}. {one-line justification anchored to the P/M/G scale}
 - **Leitura:** {priority_reading: quick win, aposta estratégica, evitar/adiar ou incremental, com o trade-off em uma linha}
+- **Opções para reduzir esforço:** {effort_reduction_ideas: como o experimento poderia ficar mais enxuto, ou "nenhuma identificada"}
 
 ---
 
