@@ -157,7 +157,7 @@ Collect: `metrics_model`, `metrics_ux`, `metrics_business`
 ## Phase 6: Gestão de Riscos no Uso de IA
 
 Introduce:
-> "Para encerrar, vamos avaliar os riscos do uso de IA neste experimento, para um uso mais ético e seguro. A abordagem segue a lógica do NIST AI RMF (AI Risk Management Framework, o modelo do instituto de padrões dos EUA para gerenciar riscos de IA): mapear os riscos, medir e decidir como tratar.
+> "Para encerrar, vamos avaliar os riscos do uso de IA neste experimento, para um uso mais ético e seguro. A ideia é mapear os riscos, medir e decidir como tratar. O tema tem referências como NIST AI RMF, EU AI Act, ISO 42001 e LGPD (o guia `references/dimensoes-risco-ia.md` explica cada uma).
 >
 > Vamos usar **10 dimensões de risco no uso de IA**:
 >

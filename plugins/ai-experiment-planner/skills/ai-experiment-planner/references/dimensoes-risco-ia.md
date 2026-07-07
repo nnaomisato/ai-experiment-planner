@@ -1,8 +1,17 @@
 # Dimensões de risco no uso de IA: guia de consulta
 
-Use este guia ao avaliar os riscos do uso de IA em um experimento (Fase 6 da skill), para um uso mais ético e seguro. A lógica segue o NIST AI RMF (AI Risk Management Framework, o modelo do instituto de padrões dos EUA para gerenciar riscos de IA). Cada dimensão traz o que é, por que importa, perguntas para você fazer e pontos-chave para verificar (um checklist rápido).
+Use este guia ao avaliar os riscos do uso de IA em um experimento (Fase 6 da skill), para um uso mais ético e seguro. Cada dimensão traz o que é, por que importa, perguntas para você fazer e pontos-chave para verificar (um checklist rápido).
 
 Os exemplos usam um mesmo produto, para facilitar: um modelo que qualifica leads de vendas (indica quais contatos têm mais chance de virar cliente).
+
+## Referências no tema
+
+Este guia conversa com marcos e normas de IA e de proteção de dados. Vale conhecer:
+
+- **NIST AI RMF** (AI Risk Management Framework): guia voluntário do instituto de padrões dos EUA para identificar e tratar riscos de IA.
+- **EU AI Act** (também chamado AIA, Artificial Intelligence Act): a lei de IA da União Europeia. Classifica os sistemas por nível de risco e define obrigações para cada nível.
+- **ISO/IEC 42001**: norma internacional para sistemas de gestão de IA. Ajuda uma organização a estruturar e certificar sua governança de IA, como a ISO 9001 faz com qualidade.
+- **GDPR / LGPD**: leis de proteção de dados pessoais. A GDPR vale na União Europeia e a LGPD no Brasil. Definem como coletar, usar e proteger dados de pessoas.
 
 ---
 
