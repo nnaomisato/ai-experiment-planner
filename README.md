@@ -10,7 +10,7 @@ Conversa guiada, uma fase por vez, explicando cada framework antes de perguntar:
 
 1. **Contexto**: nome e origem do experimento.
 2. **Problema**: o que resolver e como medir sucesso.
-3. **Pipeline atual**: mapeia o processo de hoje e sugere uma arquitetura de IA.
+3. **Pipeline atual**: mapeia o processo de hoje, sugere uma arquitetura de IA e prioriza por Esforço x Impacto (escala P/M/G).
 4. **Hipótese**: o que sabemos, o que acreditamos, o que vamos testar.
 5. **Métricas**: framework HEART aplicado a modelo, UX e negócio.
 6. **Ética**: 10 esferas de consideração, com as 2 prioridades e um plano de mitigação.

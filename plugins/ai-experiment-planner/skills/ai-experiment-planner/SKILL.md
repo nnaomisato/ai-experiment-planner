@@ -59,7 +59,31 @@ After collecting the answers, **proactively suggest an architecture** for the au
 
 For each suggestion, explain briefly *por que* aquela arquitetura se encaixa no contexto descrito. The goal is to build critical thinking. The person should understand the reasoning, not just accept the suggestion.
 
-Collect: `current_pipeline`, `automation_targets`, `architecture_suggestion`
+### Priorização: Esforço x Impacto
+
+After suggesting the architecture, help the person prioritize the experiment on two axes, using a simple P/M/G scale. Always show the anchors below so the scale converges:
+
+> "Antes de seguir, vamos priorizar. Classifique o experimento em **esforço** e **impacto**, na escala P (pequeno), M (médio), G (grande):
+>
+> **Esforço** (quanto custa construir e testar):
+> - **P**: dá para testar em até 2 semanas. Ferramentas prontas, sem integração complexa, pouca curadoria de dados.
+> - **M**: até 1 mês (4 semanas). Alguma integração, preparo de dados ou ajuste de arquitetura.
+> - **G**: mais de 1 mês. Integração pesada, volume de dados estruturados, ou mudança de processo/infra.
+>
+> **Impacto** (quanto valor gera se der certo):
+> - **P**: melhora pontual. Poucas pessoas ou um passo isolado. Ganho incremental.
+> - **M**: melhora relevante em um processo ou área. Afeta um time inteiro ou reduz tempo/custo/erro de forma clara.
+> - **G**: melhora estratégica. Muitos usuários/clientes, ou move um indicador de negócio importante.
+>
+> Qual o **esforço** (P/M/G) e qual o **impacto** (P/M/G) deste experimento?"
+
+After receiving the answer, **read the matrix back** and give a recommendation, explaining the trade-off in one line so the person understands it, not just the label:
+- **Impacto G ou M + Esforço P**: quick win. Comece por aqui.
+- **Impacto G + Esforço G**: aposta estratégica. Vale, mas quebre em fatias menores para testar antes de investir tudo.
+- **Impacto P + Esforço G**: evite ou adie. Muito custo para pouco retorno.
+- **Impacto P + Esforço P**: melhoria incremental. Faça se sobrar capacidade.
+
+Collect: `current_pipeline`, `automation_targets`, `architecture_suggestion`, `effort_level` (P/M/G), `impact_level` (P/M/G), `priority_reading`
 
 ---
 
@@ -193,6 +217,11 @@ Generate the full structured document below. Fill each section from what was col
 
 **Arquitetura sugerida:**
 {architecture_suggestion: describe the recommended pattern (RAG, multi-agent, conversational agent, etc.) and explain *por que* essa arquitetura se encaixa neste contexto específico}
+
+**Priorização (Esforço x Impacto):**
+- **Esforço:** {effort_level}. {one-line justification anchored to the P/M/G scale}
+- **Impacto:** {impact_level}. {one-line justification anchored to the P/M/G scale}
+- **Leitura:** {priority_reading: quick win, aposta estratégica, evitar/adiar ou incremental, com o trade-off em uma linha}
 
 ---
 
